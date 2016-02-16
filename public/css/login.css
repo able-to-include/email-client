@@ -1,0 +1,60 @@
+/**
+ * Apache License, Version 2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * The work represented by this file is partially funded by the ABLE-TO-INCLUDE
+ * project through the European Commission's ICT Policy Support Programme as
+ * part of the Competitiveness & Innovation Programme (Grant no.: 621055)
+ * Copyright © 2016, ABLE-TO-INCLUDE Consortium.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions & limitations
+ * under the License.
+ */
+#customBtn {
+  display: inline-block;
+  background: #4285f4;
+  color: white;
+  width: 190px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+#customBtn:hover {
+  cursor: pointer;
+}
+span.label {
+  font-weight: bold;
+  color: black;
+}
+span.icon {
+  background: url('https://google-developers.appspot.com/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+  border-right: #2265d4 1px solid;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 42px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  /* Use the Roboto font that is loaded in the <head> */
+  font-family: 'Roboto', sans-serif;
+}
+.blocks {
+	width: 100%;
+	display: inline-block;
+}
+.blocks aside {
+	width: 30%;
+	display: inline-block;
+}

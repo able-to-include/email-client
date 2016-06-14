@@ -25,6 +25,14 @@
   border-radius: 5px;
   white-space: nowrap;
 }
+h1.logo {
+  font-size: 400%;
+}
+h2.logo {
+  font-size: 100%;
+  text-transform: none;
+  font-style: italic;
+}
 #customBtn:hover {
   cursor: pointer;
 }
@@ -57,4 +65,32 @@ span.buttonText {
 .blocks aside {
 	width: 30%;
 	display: inline-block;
+}
+.bordered {
+    outline: 2px solid #2c3e50;
+    margin-bottom: 20px;
+}
+.logo {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+}
+.logo-composed {
+  width: 355px;
+  margin: auto;
+}
+.logo-left {
+  float: left;
+  display: block;
+  width: 255px;
+  text-align: right;
+}
+.logo-right {
+  float: left;
+  display: block;
+  width: 100px;
+  text-align: center;
+}
+.language {
+  text-align: right;
 }

@@ -23,14 +23,32 @@
 
     <div class='container'>
         <div class='row'>
+
+            <div class="language">
+              <p>
+                <a href="?lang=es"><?php echo $lang['ES'];?></a> | <a href="?lang=en"><?php echo $lang['EN'];?></a>
+              </p>
+            </div>
+
+
+            <div class="logo">
+              <div class="logo-composed">
+                <div class="logo-left">
+                  <h1 class='logo login-title'><?php echo $lang['PAGE_TITLE']; ?></h1>
+                  <h2 class='logo'><?php echo $lang['PAGE_SUBTITLE']; ?></h2>
+                </div>
+                <div class="logo-right">
+                  <img src="<?php echo $helper->urlBase(); ?>/public/img/logo.png" width="100" alt="Kolumba mail logo" />
+                </div>
+              </div>
+            </div>
+
+
+
             <div class='col-sm-4 col-md-4  col-md-offset-4'>
-                <h1 class='text-center login-title'><?php echo $lang['PAGE_TITLE']; ?></h1>
+
 
                 <div style="width: 100%; padding: 0 25% 0 25%;">
-                  <p>
-                    <a href="?lang=es"><?php echo $lang['ES'];?></a> | <a href="?lang=en"><?php echo $lang['EN'];?></a>
-                  </p>
-                  <img src="<?php echo $helper->urlBase(); ?>/public/img/logo.png" width="100%" alt="Kolumba mail logo" />
 
 
 
@@ -50,23 +68,17 @@
                 </div>
             </div>
 
-            <div class='text-center blocks'>
-              <div class='col-md-4'>
+            <div class='text-center blocks bordered'>
+              <div class='col-md-6'>
                 <h2><?php echo $lang['LOGIN_BLOCK_1_TITLE'];?></h2>
                 <p>
                   <?php echo $lang['LOGIN_BLOCK_1_TEXT'];?>
                 </p>
               </div>
-              <div class='col-md-4'>
+              <div class='col-md-6'>
                 <h2><?php echo $lang['LOGIN_BLOCK_2_TITLE'];?></h2>
                 <p>
                   <?php echo $lang['LOGIN_BLOCK_2_TEXT'];?>
-                </p>
-              </div>
-              <div class='col-md-4'>
-                <h2><?php echo $lang['LOGIN_BLOCK_3_TITLE'];?></h2>
-                <p>
-                  <?php echo $lang['LOGIN_BLOCK_3_TEXT'];?>
                 </p>
               </div>
             </div>

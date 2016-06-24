@@ -116,7 +116,7 @@
                         <a href='#page-top'></a>
                     </li>
 
-                    <li class='page-scroll btn btn-success <?php echo isset($vars['INBOX']) ? 'active' : ''; ?>'  style="margin: 2px;">
+                    <li class='page-scroll btn btn-xs btn-success <?php echo isset($vars['INBOX']) ? 'active' : ''; ?>'  style="margin: 2px;">
                         <a href='<?php echo $helper->url('mails','getAll'); ?>' style="background: none;">
                           <img class='icono' src='<?php echo $helper->urlBase(); ?>/public/img/icons/inbox.png' alt='<?=$lang['RECEIVED']?>'/> <?=$lang['RECEIVED']?> <?php echo isset($vars['Unreads']) && $vars['Unreads']>0 ? '('.$vars['Unreads'].')' : ''; ?>
                         </a>
@@ -124,26 +124,26 @@
 
 
 
-                    <li class='page-scroll btn btn-success <?php echo isset($vars['SENT']) ? 'active' : ''; ?>'  style="margin: 2px;">
+                    <li class='page-scroll btn btn-xs btn-success <?php echo isset($vars['SENT']) ? 'active' : ''; ?>'  style="margin: 2px;">
                       <a href='<?php echo $helper->url('mails','getAll', 'SENT'); ?>' style="background: none;">
                         <img class='icono' src='<?php echo $helper->urlBase(); ?>/public/img/icons/sent.png' alt='<?=$lang['SENT']?>' /> <?=$lang['SENT']?>
                       </a>
                     </li>
 
 
-                    <li class='page-scroll btn btn-success <?php echo isset($vars['NEW']) ? 'active' : ''; ?>'  style="margin: 2px;">
+                    <li class='page-scroll btn btn-xs btn-success <?php echo isset($vars['NEW']) ? 'active' : ''; ?>'  style="margin: 2px;">
                       <a href='<?php echo $helper->url('mails','newMail'); ?>' style="background: none;">
                          <img class='icono' src='<?php echo $helper->urlBase(); ?>/public/img/icons/new.png' alt='<?=$lang['NEW_EMAIL']?>'/> <?=$lang['NEW_EMAIL']?>
                       </a>
                     </li>
 
-                    <li class='page-scroll btn btn-success <?php echo isset($vars['CONTACTS']) ? 'active' : ''; ?>'  style="margin: 2px;">
+                    <li class='page-scroll btn btn-xs btn-success <?php echo isset($vars['CONTACTS']) ? 'active' : ''; ?>'  style="margin: 2px;">
                       <a href='<?php echo $helper->url('contacts','getAll'); ?>' style="background: none;">
                         <img class='icono' src='<?php echo $helper->urlBase(); ?>/public/img/icons/contacts.png' alt='<?=$lang['CONTACTS']?>' /> <?=$lang['CONTACTS']?>
                       </a>
                     </li>
 
-                    <li class='page-scroll btn btn-danger' style="margin: 2px;">
+                    <li class='page-scroll btn btn-xs btn-danger' style="margin: 2px;">
                       <a href='<?php echo $helper->url('account','logout'); ?>' style="background: none;">
                         <img class='icono' src='<?php echo $helper->urlBase(); ?>/public/img/icons/exit.png' alt='<?=$lang['EXIT']?>'/> <?=$lang['EXIT']?>
                       </a>

@@ -1,32 +1,16 @@
 /**
- * Apache License, Version 2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * The work represented by this file is partially funded by the ABLE-TO-INCLUDE
- * project through the European Commission's ICT Policy Support Programme as
- * part of the Competitiveness & Innovation Programme (Grant no.: 621055)
- * Copyright © 2016, ABLE-TO-INCLUDE Consortium.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions & limitations
- * under the License.
- */
-/**
  * Authors: Roberto Esteban <resteban@asi-soft.com>, Lorena Prieto
  * <lprieto@asi-soft.com> y Javier Sánchez <jsanchez@asi-soft.com>.
  *
  * Last revision: 13/01/2016
  */
- @font-face {
+ 
+ 
+@font-face {
   font-family: Comfortaa-Bold;
   src: url("../fonts/Comfortaa-Bold.ttf") format("truetype");
-}
+} 
+ 
 .tableInformation {
 	margin:0px;
   padding:0px;
@@ -77,10 +61,12 @@
 	-webkit-border-bottom-left-radius:13px;
 	border-bottom-left-radius:13px;
 }
+
 .tableInformation tr:hover td{
 	background-color: rgba(24, 188, 156, 0.6);
 	color: white;
 }
+
 .tableInformation td{
 	vertical-align:middle;	
 	border:1px solid #18bc9c; 
@@ -89,6 +75,7 @@
 	padding:13px;
 	font-size:17px;
 	font-family:Arial;
+	/*font-weight:normal;*/
 	color:#000000;
 }
 .tableInformation tr:last-child td{
@@ -121,6 +108,7 @@
 	background:-moz-linear-gradient( center top, #18bc9c 5%, #18bc9c 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#18bc9c", endColorstr="#18bc9c");
   background: -o-linear-gradient(top,#18bc9c,18bc9c);
+
 	background-color:#18bc9c;
 }
 .tableInformation tr:first-child td:first-child{
@@ -129,8 +117,10 @@
 .tableInformation tr:first-child td:last-child{
 	border-width:0px 0px 1px 1px;
 }
+
 .tableStripped tr:nth-child(odd){ background-color:#e5e5e5; }
 .tableStripped tr:nth-child(even){ background-color:#ffffff; }
+
 /* Table de recibidos / enviados */
 .tableRecibidos td:nth-child(1),
 .tableRecibidos td:nth-child(5) {
@@ -143,9 +133,12 @@
 .tableRecibidos td:nth-child(3) {
   width: 40%;
 }
+
 .tableRecibidos .notRead {
   font-weight: bold;
 }
+
+
 /* Table de contactos */
 .tableContactos td:nth-child(1) {
   width: 35%;
@@ -157,6 +150,7 @@
 .tableContactos td:nth-child(4) {
   width: 15%;
 }
+
 /* Table de redactar correo */
 .tableSend td:nth-child(1),
 .tableSend td:nth-child(3) {
@@ -165,45 +159,61 @@
 .tableSend td:nth-child(2) {
   width: 80%;
 }
+
+
+
+
+
 .marginButton {
 	margin-right: 5px;
 	margin-left: 5px;
 }
+
 textarea {
-  border: none;
-  resize: none;
-  width: 100%;
-  height: 300px;
-  color: black !important;
-  -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
-  -moz-box-sizing: border-box; /* FF1+ */
-  box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+    border: none;
+    resize: none;
+    width: 100%;
+    height: 300px;
+    color: black !important;
+    -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
+       -moz-box-sizing: border-box; /* FF1+ */
+            box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
 }
+
 .inputText {
-  border: none;
-  width: 100%;
-  color: black !important;
-  -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
-  -moz-box-sizing: border-box; /* FF1+ */
-  box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
+    border: none;
+    width: 100%;
+    color: black !important;
+    -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
+       -moz-box-sizing: border-box; /* FF1+ */
+            box-sizing: border-box; /* Chrome, IE8, Opera, Safari 5.1*/
 }
+
+/*table tr[data-href] {
+    cursor: pointer;
+}*/
+
 div.paginateContainer {
 	text-align: right;
 }
+
 .paginate {
 	margin-top: 5px;
 	margin-right: auto;
   margin-left: auto;
 }
+
 .user {
 	color: #FFFFFF; 
 	text-align: right;
-	margin-right: 30px;
+	//margin-right: 30px;
 	padding-bottom: 10px;
 }
+
 .audioplay {
 	cursor: pointer;
 }
+
 #dvLoading {
 	display:    none;
     position:   fixed;
@@ -212,8 +222,13 @@ div.paginateContainer {
     left:       0;
     height:     100%;
     width:      100%;
-    background: rgba( 255, 255, 255, .8 ) url('../img/loading.gif') 50% 50% no-repeat;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/loading.gif') 
+                50% 50% 
+                no-repeat;
+
 }
+
 /* cabecera */
 .contenedor {
 	margin-right: auto;
@@ -236,48 +251,64 @@ div.paginateContainer {
 		width:1300px
 	}
 }
+
 .navbar-brand {    
-  padding: 0 !important; 
-  height: auto !important;
-  font-family: Comfortaa-Bold, Times, serif;
-  text-transform: none;
+    padding: 0 !important; 
+    height: auto !important;
+    font-family: Comfortaa-Bold, Times, serif;
+    text-transform: none;
 }
+
+
+
 /* iconos */
+
 .icono{ 
    width:32px; 
    //padding-bottom: 5px;
 }
+
 .eye{ 
    width:56px; 
 }
+
 /* iconos fichero descargas */
 .div-files, .div-file {
 	padding: 5px;
 }
+
+
 /* boton adjuntar */
+
 .btn-attach {
   float: right;
   padding: 0; 
   background-color: #2c3e50;
   border-color: #2c3e50;
 }
+
 input[type=file] {
     display: none;
 }
+
 #sidebar-left .item {
   margin-bottom: 20px;
 }
+
 #mailBody {
   border: 5px solid;
   padding: 5px;
   border-radius: 10px;
   border-color: #2c3e50;
 }
+
 .audio-player {
   z-index: 800;
   position: fixed;
   top: 50%;
   left: 20%;
+  /*margin-top: -50px;
+  margin-left: -50px;*/
   width: 60%;
   height: 80px;
   background-color: #fff;
@@ -285,17 +316,26 @@ input[type=file] {
   border:5px solid #aaa;
   padding: 10px;
 }
+
 .navbar-default .navbar-nav > li > a, a:hover, a:focus, a:active {
   color: #ffffff !important;
 }
+
 h1 {
   font-family: Comfortaa-Bold, Times, serif;
   text-transform: none;
 }
+
+.kolumba-col-lg-3 {
+  display: inline-block;
+  width: 24%;
+}
+
 .kolumba-col-lg-4 {
   display: inline-block;
   width: 33%;
 }
+
 .kolumba-col-lg-4 button {
   width: 90%;
 }

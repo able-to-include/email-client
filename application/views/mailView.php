@@ -42,6 +42,7 @@ function normalizeEmail($address) {
                     if(strcmp($value['mime'], 'text/plain') == 0){
                         $aux = preg_replace('/<\/?[^>]+(>|$)/','',$value['content']);
                         $aux = preg_replace("/\r\n|\r|\n/",' ',$aux);
+                        $aux = preg_replace('/"/','',$aux);
                         $texto.= $aux;
                         ?>
                         texto = <?php print ('"'.$texto.'"'); ?>;
@@ -139,6 +140,41 @@ function normalizeEmail($address) {
                     async: true,
                     dataType : 'json',
                     data: 'text='+texto+'&type=sclera&language=<?php echo $lang['TEXT2SPEECH_LANGUAGE']; ?>',
+                    beforeSend: function() {
+                        $("#dvLoading").fadeIn("slow");
+                    },
+                    complete: function() {
+                        $("#dvLoading").fadeOut("slow");
+                    },
+                    success: function(json) {
+                        var newBody ='';
+                        json.pictos.forEach(function(item){
+                            if(item.indexOf("http") > -1) {
+                                newBody += '<img width="150px" src="'+item+'" />'+' ';
+                            } else {
+                                 newBody += '<font size="6">'+item+'</font>'+' ';
+                            }
+                        });
+                        document.getElementById("mailBody").innerHTML = texto + "<br/><hr/><br/>" + newBody;
+                    },
+                    error: function(xhr, status) {
+                        console.log(status);
+                    }
+                });
+            });
+            //text2picto - Arasaac
+            $('#picto3').click(function() {
+                var texto = getText();
+
+                $.ajax({
+                    url: '<?php echo TEXT2PICTO ?>',
+                    type: 'GET',
+                    headers: {
+                      'Origin': 'http://kolumba.eu'
+                    },
+                    async: true,
+                    dataType : 'json',
+                    data: 'text='+texto+'&type=arasaac&language=<?php echo $lang['TEXT2SPEECH_LANGUAGE']; ?>',
                     beforeSend: function() {
                         $("#dvLoading").fadeIn("slow");
                     },
@@ -331,7 +367,7 @@ preg_match_all('/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i',$stringCc, $cc);
             <p><strong><?php echo $lang['DATE']; ?>:</strong> <?php echo $vars['Mail']['Date']; ?></p>
             <hr class='barra'>
             <div class='col-lg-12' id='sidebar-left'>
-                <div style='text-align: center;' class='kolumba-col-lg-4 item'>
+                <div style='text-align: center;' class='kolumba-col-lg-3 item'>
                     <button type='submit' id='simplext' class='btn btn-success btn-lg' style='width:90%;' title='<?php echo $lang['SIMPLE_TEXT']; ?>'>
                         <span class="glyphicon glyphicon-book"></span> <?php echo $lang['SIMPLE_TEXT']; ?>
                     </button>
@@ -340,14 +376,19 @@ preg_match_all('/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i',$stringCc, $cc);
                 <?php
                   if (USE_TEXT_TO_PICTO) {
                     echo '
-                <div style="text-align: center;" class="kolumba-col-lg-4 item">
+                <div style="text-align: center;" class="kolumba-col-lg-3 item">
                     <button type="submit" id="picto" class="btn btn-success btn-lg" style="width:90%"  title="'.$lang['PICTO'].'">
                         <span class="glyphicon glyphicon-picture"></span> '.$lang['PICTO'].'
                     </button>
                 </div>
-                <div style="text-align: center;" class="kolumba-col-lg-4 item">
+                <div style="text-align: center;" class="kolumba-col-lg-3 item">
                     <button type="submit" id="picto2" class="btn btn-success btn-lg" style="width:90%"  title="'.$lang['PICTO_2'].'">
                         <span class="glyphicon glyphicon-picture"></span> '.$lang['PICTO_2'].'
+                    </button>
+                </div>
+                <div style="text-align: center;" class="kolumba-col-lg-3 item">
+                    <button type="submit" id="picto3" class="btn btn-success btn-lg" style="width:90%" title="'.$lang['PICTO_3'].'">
+                        <span class="glyphicon glyphicon-picture"></span> '.$lang['PICTO_3'].'
                     </button>
                 </div>';
                   }

@@ -70,6 +70,7 @@ $lang['THE_DAY'] = 'el día';
 $lang['SIMPLE_TEXT'] = 'Texto Simple';
 $lang['PICTO'] = 'Picto';
 $lang['PICTO_2'] = 'Picto 2';
+$lang['PICTO_3'] = 'Picto 3';
 
 $lang['EMPTY_MESSAGE'] = 'Mensaje vacío.';
 $lang['TEXT2SPEECH_LANGUAGE'] = 'spanish';

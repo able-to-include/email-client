@@ -42,6 +42,7 @@ $lang['LOGIN_BLOCK_3_TEXT'] = 'Al finalizar el proyecto, esperamos ofrecer una h
 $lang['LOGIN_WITH'] = 'Iniciar sesión con:';
 
 $lang['PAGE_TITLE'] = 'kolumba';
+$lang['PAGE_SUBTITLE'] = 'el cliente de correo más sencillo de la web';
 $lang['WELCOME'] = 'Bienvenido';
 $lang['RECEIVED'] = 'Recibidos';
 $lang['SENT'] = 'Enviados';
@@ -108,4 +109,14 @@ $lang['ARE_YOU_SURE_YOU_WANT_TO_DELETE_CONTACT'] = '¿Está seguro de que desea 
 $lang['PLAY'] = 'Reproducir';
 $lang['PAUSE'] = 'Parar';
 $lang['CLOSE'] = 'Cerrar';
+
+$lang['WEB_SPEECH_API_INFO_START'] = 'Pulse el icono del micrófono y comience a hablar por el tiempo que quiera.';
+$lang['WEB_SPEECH_API_INFO_SPEAK_NOW'] = 'Hable ahora.';
+$lang['WEB_SPEECH_API_INFO_NO_SPEECH'] = 'No se ha detectado voz. Es posible que necesite ajustar sus <a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">ajustes de micrófono</a>.';
+$lang['WEB_SPEECH_API_INFO_NO_MICROPHONE'] = 'No se ha encontrado micrófono. Asegúrese de que haya un micrófono instalado y que <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">los ajustes de micrófono</a> estén correctamente configurados.';
+$lang['WEB_SPEECH_API_INFO_ALLOW'] = 'Pulse el botón "Permitir" de arriba para habilitar su micrófono.';
+$lang['WEB_SPEECH_API_INFO_DENIED'] = 'El permiso para utilizar micrófono fue denegado.';
+$lang['WEB_SPEECH_API_INFO_BLOCKED'] = 'El permiso para utilizar micrófono está bloqueado. Para cambiarlo, vaya a chrome://settings/contentExceptions#media-stream';
+$lang['WEB_SPEECH_API_INFO_UPGRADE'] = 'La API de Reconocimiento de Voz Web no está soportada por este navegador. Actualice a la versión 25 o posterior de <a href="http://www.google.com/chrome">Chrome</a>.';
+$lang['WEB_SPEECH_API_LANG'] = 'es-ES';
 ?>

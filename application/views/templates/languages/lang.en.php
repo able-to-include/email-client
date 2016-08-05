@@ -42,6 +42,7 @@ $lang['LOGIN_BLOCK_3_TEXT'] = 'By the ending of this project, we hope offering a
 $lang['LOGIN_WITH'] = 'Login with:';
 
 $lang['PAGE_TITLE'] = 'kolumba';
+$lang['PAGE_SUBTITLE'] = 'the easiest mail client in the web';
 $lang['WELCOME'] = 'Welcome';
 $lang['RECEIVED'] = 'Inbox';
 $lang['SENT'] = 'Sent';
@@ -107,4 +108,14 @@ $lang['ARE_YOU_SURE_YOU_WANT_TO_DELETE_CONTACT'] = 'Are you sure you want to del
 $lang['PLAY'] = 'Play';
 $lang['PAUSE'] = 'Pause';
 $lang['CLOSE'] = 'Close';
+
+$lang['WEB_SPEECH_API_INFO_START'] = 'Click on the microphone icon and begin speaking for as long as you like.';
+$lang['WEB_SPEECH_API_INFO_SPEAK_NOW'] = 'Speak now.';
+$lang['WEB_SPEECH_API_INFO_NO_SPEECH'] = 'No speech was detected. You may need to adjust your <a href="http://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892">microphone settings</a>.';
+$lang['WEB_SPEECH_API_INFO_NO_MICROPHONE'] = 'No microphone was found. Ensure that a microphone is installed and that <a href="//support.google.com/chrome/bin/answer.py?hl=en&amp;answer=1407892"> microphone settings</a> are configured correctly.';
+$lang['WEB_SPEECH_API_INFO_ALLOW'] = 'Click the "Allow" button above to enable your microphone.';
+$lang['WEB_SPEECH_API_INFO_DENIED'] = 'Permission to use microphone was denied.';
+$lang['WEB_SPEECH_API_INFO_BLOCKED'] = 'Permission to use microphone is blocked. To change, go to chrome://settings/contentExceptions#media-stream';
+$lang['WEB_SPEECH_API_INFO_UPGRADE'] = 'Web Speech API is not supported by this browser. Upgrade to <a href="http://www.google.com/chrome">Chrome</a> version 25 or later.';
+$lang['WEB_SPEECH_API_LANG'] = 'en-GB';
 ?>

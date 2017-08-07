@@ -8,6 +8,7 @@ Simplext: Any text received is translated to easy reading.
 Text2Picto: It translates a text into pictograms. It is a technology to be used by people with lower literacy or reading comprehension skills.
 Text2Speech: Changes written text to voice.
  
+ 
 The Accessible email App is described at http://able-to-include.com/accessible-services/application/an-accessible-email/ and http://kolumba.taln.upf.edu/
  
 Development of the Kolumba email claim has been taken over by UPF and is now available publically at https://github.com/TalnUPF/kolumba-email-client
